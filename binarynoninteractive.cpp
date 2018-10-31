@@ -13,36 +13,37 @@ int main() {
 	int num;
 	bool inRange;
 	ifstream inputFile;
+	ofstream outFile;
 
-	inputFile.open("D:\\working\\digits.txt");
-
+	inputFile.open("digits.txt");
+	outFile.open("digitsresult.txt");
 	while(inputFile >> num){
 
 		inRange = num >= 0 && num <= 65535; //initializing range
-
+		outFile << "The base 10 number is: " << num << endl;
 		if (!inRange) // check to see if the num given is in range
-			cout << "The number given is invalid.";
+			outFile << "The number given is out of range.";
 
 		else {
 
-			cout << "The assigned binary equivalent: ";
+			outFile << "The assigned binary equivalent: ";
 
 			for (int i = 15; i >= 0; i--) {
 
 				if (num >= int(pow(2, i))) {
-					cout << 1;
+					outFile << 1;
 					num -= int(pow(2, i));
 				}
 
 				else
-					cout << 0;
+					outFile << 0;
 
 				if (i % 4 == 0)
-					cout << ' ';
+					outFile << ' ';
 
 			}
 		}
-			cout << endl; //spacing
+			outFile << endl << endl; //spacing
 	
 		}
 	

@@ -12,11 +12,12 @@ using namespace std;
 int main() {
 	
 	//variables used
-	int counter = 6, airFeet = 1100, waterFeet = 4900, steelFeet = 16400;
+	int counter = 6;
+	const int airFeet = 1100, waterFeet = 4900, steelFeet = 16400;
 	double feetDistance, finalSec;
 	string medium;
 	bool check;
-
+	
 	//header for menu
 	cout << "------------------------------------------------------------" << endl;
 	cout << left << setw(30) << "Medium" << setw(30) << "Speed" << endl;
@@ -41,10 +42,10 @@ int main() {
 		cin >> feetDistance;
 
 		//assign check to conditional statements
-		check = feetDistance < 0 || (medium != "air" && medium != "water" && medium != "steel");
+		check = feetDistance >= 0 && (medium == "air" || medium == "water" || medium == "steel");
 
-		//check if the input is valid
-		if (check) 
+		//check if the input is invalid
+		if (!check) 
 			cout << "Invalid Selection! Please try again." << endl;
 		
 		//computes for time with respect to medium

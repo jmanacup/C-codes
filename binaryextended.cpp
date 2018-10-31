@@ -20,7 +20,7 @@ int main() {
 		inRange = num >= 0 && num <= 65535; //initializing range
 
 		if (!inRange) // check to see if the num given is in range
-			cout << "The number given is invalid." << endl;
+			cout << "The number given is invalid.";
 
 		else {
 
@@ -40,12 +40,13 @@ int main() {
 					cout << ' ';
 
 			}
-			
-			cout << endl; //spacing
+		}
+		
+		cout << endl; //spacing
 
 			cout << "Do you want to insert a number again? (y/n) "; //asks the user to input again
 			cin >> reply;
-		}
+		
 	} while (reply == 'y');
 	
 	return 0;
