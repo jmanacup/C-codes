@@ -1,0 +1,17 @@
+2019 9
+$500 and 2 nights lodging at Inn of the Mountain Gods
+$500 and 2 nights lodging at Inn of the Mountain Gods
+$1000 and 3 nights lodging at Inn of the Mountain Gods
+$1000 and 3 nights lodging at Inn of the Mountain Gods
+$1500 and 4 nights lodging at Inn of the Mountain Gods
+$5000 and all expense-paid trip to Lake Tahoe
+Babbage 55.2 65.3 40.1 21.2 70.0
+Boole 10.11 101.01 11.0 10.01 100.0
+Euclid 50.3 54.6 56.3 55.9 49.9
+Gates 64.3 69.3 52.1 70.2 21.5
+Jobs 50.6 55.2 60.9 65.2 70.5
+Morgan 64.8 71.4 52.1 40.7 60.2
+Pascal 87.2 56.5 40.3 12.5 51.3
+Stroustrup 65.4 65.4 65.4 65.4 65.4
+Turing 63.7 75.2 50.1 65.9 60.2
+
